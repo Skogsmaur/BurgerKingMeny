@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rumpe Bilder</title>
+	<script type="text/javascript">
+		function loadContact() {
+            //history.pushState({}, "", "name_url_change");
+			history.pushState({}, "", "vertu/contact");
+			document.getElementById("contact").innerHTML = "Get content and display on div contact, you can remove div if you don't need it.";
+		}
+		
+		function loadProducts() {
+			history.pushState({}, "", "vertu/products");
+			document.getElementById("contact").innerHTML = "This div can be removed!";
+			document.getElementById("products").innerHTML = "Get content for Products and display on div products.";
+		}
+	</script>
+</head>
+<body>
+    <a href="https://www.pornhub.com" target="_self Title="Den Her Tar Deg til mer Rompe Bilder">
+        Mer BIlder
+    </a>
+
+    <h1>Home Page</h1>
+	<button onClick="loadContact()">Contact Page</button>
+	<button onClick="loadProducts()">Products</button>
+	<div id="contact"></div>
+	<div id="products"></div>
+    <p>Her Finner DU Mange RUmpe Bilder.</p>
+	<img src="/Bilder/Jone.png" width="600">
+</body>
+</html>
